@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-bg-welcome {
+  /*  #0f0e13 */
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 30% 15%, hsla(250, 40%, 60%, 1) 0, transparent 25%),
+    radial-gradient(at 25% 50%, hsla(225, 39%, 30%, 1) 0, transparent 30%),
+    radial-gradient(at 60% 0%, hsla(225, 39%, 30%, 1) 0, transparent 30%),
+    radial-gradient(at 30% 0%, hsla(225, 39%, 30%, 1) 0, transparent 30%),
+    radial-gradient(at 70% 40%, hsla(339, 49%, 30%, 1) 0, transparent 20%);
+}
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* white glassmorphism */
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-gradient {
+  background-color: #808080;
+  background-image: radial-gradient(
+      at 4% 36%,
+      hsla(0, 0%, 100%, 1) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-image {
+  background-image: url(../../images/bg_matrix.jpg);
+  width: 200px;
+  height: 200px;
+}
+
+@layer base {
+  body {
+    color: white;
+  }
+  .stat {
+    background: radial-gradient(
+        232.36% 214.3% at 124.11% -92.78%,
+        rgba(218, 227, 242, 0.2) 0,
+        rgba(102, 122, 155, 0) 100%
+      ),
+      rgba(28, 32, 41, 0.8);
+  }
+  .button-stat {
+    background: radial-gradient(
+        232.36% 214.3% at 124.11% -92.78%,
+        #2158ab 0,
+        #154388 100%
+      ),
+      #132f58;
+  }
+  .button-effect {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    color: "#000";
+  }
+  .button-effect::after,
+  .button-effect::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+  }
+
+  .button-effect::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #88b4f5;
+    border-right-color: #88b4f5;
+  }
+
+  .button-effect::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #88b4f5;
+    border-left-color: #88b4f5;
+  }
+
+  .button-effect:hover:after,
+  .button-effect:hover:before {
+    width: 100%;
+    height: 100%;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
