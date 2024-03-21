@@ -7,7 +7,7 @@ const ButtonPrimary = React.forwardRef(
     return (
       <button
         className={
-          "text-lg capitalize px-5 py-3 font-semibold bg-gradient-to-b from-primaryColor to-[#527cb6] rounded-lg text-black hover:opacity-90 transition-all " +
+          "text-lg capitalize px-5 py-3 font-semibold bg-gradient-to-b from-primaryColor to-[#4a78b8] rounded-md text-black hover:opacity-90 transition-all disabled:opacity-80 " +
           className
         }
         ref={ref}
@@ -16,8 +16,8 @@ const ButtonPrimary = React.forwardRef(
         {...props}
       >
         {loading ? (
-          <div className="min-w-[100px] flex justify-center">
-            <Loader2 className="w-5 h-5 animate-spin" />
+          <div className="min-w-[100px] flex justify-center h-6">
+            <Loader2 className="w-5 h-5 text-black animate-spin" />
           </div>
         ) : (
           children

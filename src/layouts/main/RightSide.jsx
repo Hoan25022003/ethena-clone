@@ -191,7 +191,7 @@ const RightSide = () => {
   }, [errors]);
   console.log(BigNumber(balance?.value));
   return (
-    <div className="lg:w-full sm:w-[80%] md:w-[50%] w-full flex flex-col gap-y-5">
+    <div className="lg:w-full sm:w-[80%] md:w-[50%] w-full flex flex-col gap-y-4">
       <BlockContent title="Payment" className="gap-y-3">
         <div className="w-full text-left">
           <label className="text-sm sm:text-base">Token Address</label>
@@ -243,7 +243,7 @@ const RightSide = () => {
               </button>
             </div>
             <ButtonPrimary
-              className="px-5 py-3 mt-6"
+              className="w-full py-3 mt-6"
               onClick={onClickSend}
               loading={isDisabledInput}
             >
@@ -251,7 +251,7 @@ const RightSide = () => {
             </ButtonPrimary>
           </>
         ) : (
-          <ConnectWallet className="mt-3" />
+          <ConnectWallet className="w-full mt-3" />
         )}
       </BlockContent>
       <BlockContent
