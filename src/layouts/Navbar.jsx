@@ -14,7 +14,7 @@ const Navbar = () => {
       <a href={"*"} className="flex items-center justify-start ml-2 gap-x-2">
         <img className="w-10 sm:w-8" src="/ic_etherna.png" alt="" />
         <span className="ml-[2px] text-lg sm:text-2xl sm:ml-1 hidden sm:block">
-          Etherna
+          Junction
         </span>
       </a>
       <div className="flex items-center lg:gap-x-1 xl:gap-x-2">
