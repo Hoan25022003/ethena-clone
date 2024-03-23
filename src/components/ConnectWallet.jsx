@@ -23,7 +23,7 @@ const ConnectWallet = ({ className = "" }) => {
 
   return (
     <ButtonPrimary
-      className={`px-5 py-3 ${className}`}
+      className={`px-5 ${className}`}
       onClick={!isConnected ? onClickConnect : onClickCopyAddress}
       loading={isConnecting || isReconnecting}
     >

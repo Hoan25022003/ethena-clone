@@ -17,6 +17,7 @@ export default {
         grayColor: "#bdbdbd",
         borderColor: "#273248",
         overlayColor: "#06080C",
+        grayColor2: "#1c202999",
       },
     },
   },

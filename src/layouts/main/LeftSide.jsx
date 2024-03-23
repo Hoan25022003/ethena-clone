@@ -14,7 +14,7 @@ const LeftSide = () => {
         <span className="font-semibold leading-4 text-white">Market Size</span>{" "}
         <span className="font-bold leading-4 text-primaryColor">$100M/Day</span>
       </div>
-      <ConnectWallet className="min-w-[200px] mt-6"></ConnectWallet>
+      <ConnectWallet className="min-w-[250px] mt-6 py-[14px]"></ConnectWallet>
     </div>
   );
 };

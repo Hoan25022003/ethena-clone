@@ -10,49 +10,13 @@ const NavBarItem = ({ title, className }) => {
 
 const Navbar = () => {
   return (
-    <nav className="sm:mx-6 mx-4 flex justify-between items-center py-[14px] sm:px-5 px-3 bg-overlayColor bg-opacity-30 rounded-xxl backdrop-blur-[1.5px] border border-borderColor">
+    <nav className="sm:mx-6 mx-4 flex justify-between items-center py-3 sm:px-5 px-3 bg-overlayColor bg-opacity-30 rounded-xxl backdrop-blur-[1.5px] border border-borderColor">
       <a href={"*"} className="flex items-center justify-start ml-2 gap-x-2">
         <img className="w-10 sm:w-8" src="/ic_etherna.png" alt="" />
         <span className="ml-[2px] text-lg sm:text-2xl sm:ml-1 hidden sm:block">
-          Junction
+          Securebrid
         </span>
       </a>
-      <div className="flex items-center lg:gap-x-1 xl:gap-x-2">
-        <a
-          href="*"
-          className="hidden transition-all rounded-full lg:flex lg:p-2 lg:text-sm xl:text-base text-grayColor hover:text-primaryColor"
-        >
-          Airdrop
-        </a>
-        <a
-          href="https://www.ethena.fi/leaderboard"
-          target="_blank"
-          className="hidden transition-all rounded-full lg:flex lg:p-2 lg:text-sm xl:text-base text-grayColor hover:text-primaryColor"
-        >
-          Leaderboard
-        </a>
-        <a
-          href="https://ethena-labs.gitbook.io/ethena-labs"
-          target="_blank"
-          className="hidden transition-all rounded-full lg:flex lg:p-2 lg:text-sm xl:text-base text-grayColor hover:text-primaryColor"
-        >
-          Docs
-        </a>
-        <a
-          href="https://discord.com/invite/HVfuYyNm8S"
-          target="_blank"
-          className="hidden transition-all rounded-full lg:flex lg:p-2 lg:text-sm xl:text-base text-grayColor hover:text-primaryColor"
-        >
-          Community
-        </a>
-        <a
-          href="https://blog.bitmex.com/dust-on-crust/"
-          target="_blank"
-          className="hidden transition-all rounded-full lg:flex lg:p-2 lg:text-sm xl:text-base text-grayColor hover:text-primaryColor"
-        >
-          Genesis Story
-        </a>
-      </div>
       <div className="flex items-center gap-x-5">
         <div className="flex items-center gap-x-2">
           <div className="hidden sm:flex lg:hidden xl:flex items-center gap-x-2 stat py-[2px] px-[10px] rounded-[4px]">
@@ -83,6 +47,14 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex items-center px-[14px] py-2 rounded-md cursor-pointer gap-x-2 bg-grayColor2">
+        <img
+          src="binance-smart-chain-bsc-logo.png"
+          className="w-[22px]"
+          alt=""
+        />
+        <span className="font-bold">BSC</span>
       </div>
     </nav>
   );

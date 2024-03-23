@@ -10,7 +10,7 @@ const MainLayout = () => {
         className="z-50 w-[20%] hidden mt-8 2xl:block"
         alt=""
       />
-      <div className="flex items-center justify-center lg:w-[80%] xl:w-[60%] w-full mb-10">
+      <div className="flex items-center justify-center lg:w-[80%] xl:w-[60%] w-full mb-5">
         <RightSide />
       </div>
     </div>

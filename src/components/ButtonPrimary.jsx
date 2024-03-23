@@ -7,7 +7,7 @@ const ButtonPrimary = React.forwardRef(
     return (
       <button
         className={
-          "text-lg capitalize px-5 py-3 font-semibold bg-gradient-to-b from-primaryColor to-[#4a78b8] rounded-md text-black hover:opacity-90 transition-all disabled:opacity-80 " +
+          "text-lg capitalize px-5 font-semibold bg-gradient-to-b from-primaryColor to-[#4a78b8] rounded-md text-black hover:opacity-90 transition-all disabled:opacity-80 " +
           className
         }
         ref={ref}

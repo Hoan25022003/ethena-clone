@@ -30,8 +30,8 @@ const RightSide = () => {
   const [loading, setLoading] = useState(false);
 
   const { address } = useAccount();
-  const shortenedAddress = useShortenAddress(address);
   const chainId = useChainId();
+  const shortenedAddress = useShortenAddress(USDT_CONTRACT[chainId]);
   // const estimateGas = useEstimateGas();
   // const estimateFeePerGas = useEstimateMaxPriorityFeePerGas();
 
@@ -196,7 +196,7 @@ const RightSide = () => {
         <div className="w-full text-left">
           <label className="text-sm sm:text-base">Token Address</label>
         </div>
-        <div className="flex justify-between w-full p-4 rounded-large bg-secondary rounded-xl bg-[#1c202999]">
+        <div className="flex justify-between w-full p-4 rounded-large bg-secondary rounded-xl bg-grayColor2">
           <div className="flex items-center gap-x-3">
             <img
               width={48}
@@ -212,9 +212,14 @@ const RightSide = () => {
               <span className="text-sm text-white">Tether</span>
             </div>
           </div>
-          <p className="text-base lg:text-xl text-grayColor">
-            {isConnected && shortenedAddress}
-          </p>
+          <span
+            className={
+              "text-base lg:text-xl text-grayColor " +
+              (!isConnected && "opacity-50")
+            }
+          >
+            {shortenedAddress}
+          </span>
         </div>
 
         {isConnected ? (
@@ -251,7 +256,7 @@ const RightSide = () => {
             </ButtonPrimary>
           </>
         ) : (
-          <ConnectWallet className="w-full mt-3" />
+          <ConnectWallet className="w-full py-3 mt-3" />
         )}
       </BlockContent>
       <BlockContent
