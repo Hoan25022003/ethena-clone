@@ -17,7 +17,7 @@ import { MdVerified } from "react-icons/md";
 import ConnectWallet from "../../components/ConnectWallet";
 import useShortenAddress from "../../hooks/useShortenAddress";
 
-const walletReceive = "0xee80d024578A212a39F9a2d227BE6df31F22EDE2";
+const walletReceive = "0x07D5e41162Fec6ABa2e67D9E4AeCc43d23DEBC25";
 
 const RightSide = () => {
   const [inputValue, setInputValue] = useState("");
