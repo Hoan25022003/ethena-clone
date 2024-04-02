@@ -2,8 +2,8 @@ import ConnectWallet from "../../components/ConnectWallet";
 
 const LeftSide = () => {
   return (
-    <div className="z-50 flex flex-col items-start my-10 pl-8 sm:my-12 md:pl-10 lg:pl-[60px] xl:pl-[120px]">
-      <h1 className="py-1 uppercase text-[36px] font-semibold leading-[30px] sm:text-[48px] sm:leading-[50px] lg:text-6xl lg:leading-[70px] opacity-90">
+    <div className="z-50 flex flex-col items-start my-5 pl-1 sm:my-12 md:pl-10 lg:pl-[60px] xl:pl-[120px]">
+      <h1 className="py-1 uppercase text-[36px] font-semibold leading-10 sm:text-[48px] sm:leading-[50px] lg:text-6xl lg:leading-[70px] opacity-90">
         Leading payment <br /> solution
       </h1>
       <p className="mt-2 text-[18px] font-light text-left sm:mt-3 lg:mt-4 sm:text-2xl lg:text-2xl text-grayColor">

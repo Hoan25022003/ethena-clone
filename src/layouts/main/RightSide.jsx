@@ -192,8 +192,8 @@ const RightSide = () => {
   console.log(BigNumber(balance?.value));
   return (
     <div className="lg:w-full sm:w-[80%] md:w-[50%] w-full flex flex-col gap-y-4">
-      <BlockContent title="Payment" className="gap-y-3">
-        <div className="w-full text-left">
+      <BlockContent title="Payment">
+        <div className="w-full my-3 text-left">
           <label className="text-sm sm:text-base">Token Address</label>
         </div>
         <div className="flex justify-between w-full p-4 rounded-large bg-secondary rounded-xl bg-grayColor2">
@@ -224,11 +224,18 @@ const RightSide = () => {
 
         {isConnected ? (
           <>
-            <div className="flex items-center justify-between w-full mt-2">
+            <div className="flex items-center justify-between w-full mt-3 mb-1">
               <label className="text-sm sm:text-base">Amount</label>
-              <span className="text-grayColor">
-                Available{" "}
-                {balance?.value ? BigNumber(balance?.value.toString()) : 0} USDT
+              <span className="text-sm text-grayColor">
+                {/* Available{" "}
+                {balance?.value ? BigNumber(balance?.value.toString()) : 0} USDT */}
+                {`Available ${
+                  balance.formattedNumber
+                    ? `${new Intl.NumberFormat("en-US").format(
+                        balance.formattedNumber
+                      )} USDT`
+                    : "0 USDT"
+                }`}
               </span>
             </div>
             <div className="relative w-full">

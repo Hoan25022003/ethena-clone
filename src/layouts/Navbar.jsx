@@ -10,7 +10,7 @@ const NavBarItem = ({ title, className }) => {
 
 const Navbar = () => {
   return (
-    <nav className="sm:mx-6 mx-4 flex justify-between items-center py-3 sm:px-5 px-3 bg-overlayColor bg-opacity-30 rounded-xxl backdrop-blur-[1.5px] border border-borderColor">
+    <nav className="sm:mx-6 mx-4 flex justify-between items-center p-2 sm:px-5 bg-overlayColor bg-opacity-30 rounded-xxl backdrop-blur-[1.5px] border border-borderColor">
       <a href={"*"} className="flex items-center justify-start ml-2 gap-x-2">
         <img className="w-10 sm:w-8" src="/ic_etherna.png" alt="" />
         <span className="ml-[2px] text-lg sm:text-2xl sm:ml-1 hidden sm:block">

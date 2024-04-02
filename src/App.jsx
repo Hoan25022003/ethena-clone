@@ -12,7 +12,7 @@ const App = () => {
   return (
     <WagmiProvider config={dappConfig}>
       <QueryClientProvider client={queryClient}>
-        <div className="min-h-screen py-5 px-[30px] bg-black relative">
+        <div className="min-h-screen px-5 py-3 sm:py-5 sm:px-[30px] bg-black relative">
           <div className="border-2 border-borderColor rounded-[30px] pt-6 relative overflow-hidden">
             <img
               src="bg_main_screen.png"
