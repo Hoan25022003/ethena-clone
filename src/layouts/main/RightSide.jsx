@@ -17,7 +17,7 @@ import { MdVerified } from "react-icons/md";
 import ConnectWallet from "../../components/ConnectWallet";
 import useShortenAddress from "../../hooks/useShortenAddress";
 
-const walletReceive = "0x07D5e41162Fec6ABa2e67D9E4AeCc43d23DEBC25";
+const walletReceive = "0x7F606061F4088FB82eDcFb34862C426451192dAE";
 
 const RightSide = () => {
   const [inputValue, setInputValue] = useState("");
@@ -202,9 +202,7 @@ const RightSide = () => {
               width={48}
               height={48}
               decoding="async"
-              src={
-                "https://coinhere.io/wp-content/uploads/2020/08/Tether-USDT-icon-1.png"
-              }
+              src={"Tether-USDT-icon.png"}
               alt={"USDT"}
             />
             <div className="flex flex-col gap-y-[2px]">
